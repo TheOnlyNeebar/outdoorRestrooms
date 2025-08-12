@@ -161,4 +161,180 @@
       padding: 14px 50px;
       border-radius: 40px;
       box-shadow: 0 6px 15px rgba(191, 160, 107, 0.6);
-      tex
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #a08644;
+      box-shadow: 0 8px 22px rgba(160, 134, 68, 0.85);
+    }
+
+    /* Footer */
+    footer {
+      background: #3b2e1e;
+      color: #f6f1e7;
+      padding: 50px 40px 25px;
+      font-size: 0.95rem;
+    }
+    .footer-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 35px;
+    }
+    .footer-about h3,
+    .footer-nav h3,
+    .footer-social h3 {
+      font-family: 'Playfair Display', cursive;
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+    .footer-about p {
+      max-width: 280px;
+      line-height: 1.6;
+      color: #d6cfa9;
+    }
+    .footer-nav ul {
+      list-style: none;
+      padding-left: 0;
+      color: #d6cfa9;
+    }
+    .footer-nav ul li {
+      margin-bottom: 14px;
+    }
+    .footer-nav ul li a {
+      color: #d6cfa9;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    .footer-nav ul li a:hover {
+      color: #bfa06b;
+    }
+    .footer-social .social-icons a {
+      margin-right: 18px;
+      display: inline-block;
+      filter: brightness(0) invert(1);
+      transition: filter 0.3s ease;
+    }
+    .footer-social .social-icons a:hover {
+      filter: brightness(0) invert(0.6) sepia(1) saturate(8) hue-rotate(30deg);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 28px;
+      border-top: 1px solid #5a4b34;
+      color: #a08e58;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-about p {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo">Elite Outdoor Restrooms</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="request-quote.html" class="btn-quote-nav">Request a Quote</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1 class="services-title">Our Luxury Restroom Rental Services</h1>
+
+    <section class="service-group">
+      <h2>Included with Your Rental</h2>
+      <ul class="service-list">
+        <li>Delivery and pickup with transparent pricing</li>
+        <li>Expert setup and takedown for flawless presentation</li>
+        <li>Premium tissue paper and paper towels provided</li>
+        <li>Meticulously sanitized restrooms with advanced odor control</li>
+      </ul>
+    </section>
+
+    <section class="service-group">
+      <h2>Additional Services Available</h2>
+      <ul class="service-list">
+        <li>Water supply service</li>
+        <li>Generator rental and power supply</li>
+        <li>On-site cleaning and maintenance</li>
+        <li>Concierge services for unparalleled guest comfort</li>
+      </ul>
+    </section>
+
+    <section class="service-group">
+      <h2>Pampered Guest Package</h2>
+      <ul class="service-list">
+        <li>Curated background music to enhance ambiance</li>
+        <li>Fresh cut floral arrangements</li>
+        <li>Moisturizing lotion stations</li>
+        <li>Premium boxed tissues</li>
+        <li>Individually wrapped candies for guests</li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="services-cta">
+      <p>Ready to elevate your event? Request a personalized quote tailored to your needs.</p>
+      <a href="request-quote.html" class="btn-primary">Request a Quote</a>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Elite Outdoor Restrooms</h3>
+        <p>We provide luxurious portable restroom trailers, delivering style, comfort, and unmatched cleanliness for your special events.</p>
+      </div>
+      <div class="footer-nav">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="request-quote.html">Request a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/facebook-icon.svg" alt="Facebook" /></a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/instagram-icon.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Elite Outdoor Restrooms. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
