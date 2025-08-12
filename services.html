@@ -4,103 +4,161 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Elite Outdoor Restrooms - Services</title>
-  <meta name="description" content="Our premium portable restroom rental services including delivery, setup, concierge, and luxury add-ons." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body class="services-body">
+  <meta name="description" content="Premium portable restroom rentals with delivery, setup, concierge, and luxury add-ons." />
+  
+  <!-- Google Fonts: Playfair Display (cursive serif) + Lora (serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #fff;
+      color: #3b2e1e; /* dark brown */
+      line-height: 1.6;
+    }
+    a {
+      color: #bfa06b;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #967e3d;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Elite Outdoor Restrooms</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="request-quote.html" class="btn-quote-nav">Request a Quote</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span class="hamburger"></span>
-      </button>
-    </div>
-  </nav>
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+      background: #fff;
+      border-bottom: 1px solid #e6d9b8;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: 600;
+    }
+    nav .logo {
+      font-family: 'Playfair Display', cursive;
+      font-size: 1.9rem;
+      color: #3b2e1e;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      font-size: 1.1rem;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      font-weight: 600;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      border-color: #bfa06b;
+      color: #bfa06b;
+    }
+    .btn-quote-nav {
+      padding: 8px 20px;
+      border: 2px solid #bfa06b;
+      border-radius: 30px;
+      font-weight: 700;
+      color: #bfa06b;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-quote-nav:hover {
+      background-color: #bfa06b;
+      color: #fff;
+    }
 
-  <!-- Services Section -->
-  <main>
-    <section class="services-section container">
-      <h1 class="services-title">Our Luxury Restroom Rental Services</h1>
+    /* Page title */
+    h1.services-title {
+      font-family: 'Playfair Display', cursive;
+      font-size: 3.6rem;
+      text-align: center;
+      color: #3b2e1e;
+      margin-bottom: 60px;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
 
-      <div class="service-group">
-        <h2>Your rental includes:</h2>
-        <ul class="service-list">
-          <li>Professional delivery and pickup (additional charges may apply based on location)</li>
-          <li>Complete setup and takedown at your event site</li>
-          <li>High-quality tissue paper and paper towels</li>
-          <li>Clean, sanitized restrooms with advanced odor control</li>
-        </ul>
-      </div>
+    /* Service groups */
+    .service-group {
+      margin-bottom: 45px;
+    }
+    .service-group h2 {
+      font-family: 'Playfair Display', cursive;
+      font-size: 2.2rem;
+      color: #3b2e1e;
+      margin-bottom: 25px;
+      font-weight: 700;
+      border-bottom: 2px solid #bfa06b;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .service-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.18rem;
+      color: #5a4b34;
+    }
+    .service-list li {
+      margin-bottom: 18px;
+      padding-left: 25px;
+      position: relative;
+    }
+    /* Elegant bullet */
+    .service-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 12px;
+      height: 12px;
+      background: #bfa06b;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #d4c17a88;
+    }
 
-      <div class="service-group">
-        <h2>Additional services available:</h2>
-        <ul class="service-list">
-          <li>Water supply service</li>
-          <li>Generator power service</li>
-          <li>On-site cleaning and maintenance</li>
-          <li>Concierge services for a premium guest experience</li>
-        </ul>
-      </div>
-
-      <div class="service-group">
-        <h2>Our Pampered Guest Package:</h2>
-        <ul class="service-list">
-          <li>Background music tailored to your event</li>
-          <li>Fresh cut flowers for an elegant ambiance</li>
-          <li>Moisturizing lotion stations</li>
-          <li>Premium boxed tissues</li>
-          <li>Individually wrapped candies for your guests</li>
-        </ul>
-      </div>
-
-      <!-- Request Quote CTA -->
-      <section class="cta-section services-cta">
-        <p>Ready to elevate your event with our premium services? Request a personalized quote today.</p>
-        <a href="request-quote.html" class="btn-primary">Request a Quote</a>
-      </section>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-container">
-      <div class="footer-about">
-        <h3>About Elite Outdoor Restrooms</h3>
-        <p>We provide luxurious portable restroom trailers, delivering style, comfort, and unmatched cleanliness for your special events.</p>
-      </div>
-      <div class="footer-nav">
-        <h3>Navigation</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="request-quote.html">Request a Quote</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/facebook-icon.svg" alt="Facebook" /></a>
-          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/instagram-icon.svg" alt="Instagram" /></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Elite Outdoor Restrooms. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    /* CTA section */
+    .services-cta {
+      max-width: 600px;
+      margin: 60px auto 0;
+      padding: 30px 40px;
+      background: #f6f1e7;
+      border-radius: 45px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgb(191 160 107 / 0.25);
+    }
+    .services-cta p {
+      font-family: 'Playfair Display', cursive;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #3b2e1e;
+    }
+    .btn-primary {
+      display: inline-block;
+      background-color: #bfa06b;
+      color: #fff;
+      font-weight: 700;
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      padding: 14px 50px;
+      border-radius: 40px;
+      box-shadow: 0 6px 15px rgba(191, 160, 107, 0.6);
+      tex
