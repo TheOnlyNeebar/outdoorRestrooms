@@ -250,3 +250,6 @@ footer {
     margin: 10px 0;
     color: #333; /* dark gray for readability */
 }
+.included-section {
+    background: linear-gradient(135deg, #f9f5ef, #fff8f0);
+}
