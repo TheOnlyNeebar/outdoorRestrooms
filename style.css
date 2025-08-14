@@ -226,3 +226,27 @@ footer {
   font-size: 0.9rem;
   color: #9ebf65;
 }
+/* Full-width background for "Included in Your Rental" section */
+.included-section {
+    background-color: #f9f5ef; /* soft goldish cream background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.included-section h2 {
+    color: #a67c52; /* elegant gold-brown for headings */
+    font-family: 'Great Vibes', cursive; /* classy cursive font */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.included-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.included-section li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333; /* dark gray for readability */
+}
